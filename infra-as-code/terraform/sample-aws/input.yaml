@@ -1,0 +1,26 @@
+# Replace with the name which you want to give to your EKS cluster
+# Cluster name can have only lowercase alphanumeric characters and hyphens
+# For example: "upyog-demo"
+cluster_name: "AbDEAS-Dev"
+
+# Replace with ssh key name you want
+ssh_key_name: "AbDEAS-dev-ssh-key" 
+
+# Replace with public key which you want to add in your EC2 machines # ssh key which you want to add in your EC2 machines
+public_ssh_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDcTUI00b0X7Iy1hjBKqc34qDAS++NFh1iwVlOBADxOs7vGlMwW39bxBfU2tSEtnm5jPGE7wpBXovr7WOYU//up56D71hDfRDuPy9gCGcfpfkkqkF/3GHJIgOn9fQuLyw8EozrhFaWo+hpUOfo36HtX55Wz6SRd97Qr8QPoX2FTpDm0SU44tPaeBE0vjI7daOqsV0zXeUUmJ5avYdgDTSvAl5vz7zut+PQq3S7aEqjV5Qi6/NEuDyNW2agzAQF57/v136YBEmOXEGBwipWSmkHx5EEaLqyZHapHFeTDOWtPjp0L6QcyAXyfghtiI2MLpmixSw+onGlgtxGPB8gbORK3"
+
+# Name you want to give to your Database
+# DB name must contain only alphanumeric characters
+db_name: "abdeasdev"
+
+# Replace with DB username you want
+# DB user name must contain only alphanumeric characters
+db_username: "AbDEAS" 
+
+# Replace with Domain name you want for your web applications
+domain_name: "abdeas-dev.sparrowsoftech.in"
+
+# Replace with the name you want to give to your S3 bucket which is used to store the terraform state
+terraform_state_bucket_name: "abdeasdev-terraform"
+
+

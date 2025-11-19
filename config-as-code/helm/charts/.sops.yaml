@@ -1,0 +1,9 @@
+# creation rules are evaluated sequentially, the first match wins
+creation_rules:
+        # upon creation of a file that matches the pattern *dev.yaml,
+        # KMS set A is used
+        # eGOV Internal ------------------------------------------------------------------------------------------------------------- #
+        - path_regex: environments/qa\-secrets\.yaml$
+          kms: 'arn:aws:kms:ap-south-1:648721531140:key/36838337-ec39-4552-93c8-87f9382e8e1b'
+        - path_regex: environments/ci\-secrets\.yaml$
+          kms: 'arn:aws:kms:ap-south-1:648721531140:key/27054cc4-4a57-4bdd-9244-a7b4e3c7a168'
